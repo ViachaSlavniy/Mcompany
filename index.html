@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мониторинговая компания</title>
+    <link rel="icon" href="Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- POPUP -->
+
+    <div class="popup__container hide">
+        <div class="popup__img-wrap">
+            <div class="popup__btn-wrap">
+                <img class="popup__btn" src="./images/cancel.svg" alt="cross">
+            </div>
+            <img class="popup__img" src="" alt="image">
+        </div>
+    </div>
+
+    <!-- HEADER -->
+
+    <div class="header" id="header">
+        <div class="container container__header">
+            <div class="menu">
+                <div class="menu__item menu__item-logo">
+                    <img class="menu__item-logo" src="./images/Logo1_02.png" alt="logo">
+                </div>
+                <div class="menu__item menu__item-links">
+                    <div class="menu__item-link">
+                        <a href="#header">Главная</a>
+                    </div>
+                    <div class="menu__item-link">
+                        <a href="#services">Услуги</a>
+                    </div>
+                    <div class="menu__item-link">
+                        <a href="#ourWorks">Наши работы</a>
+                    </div>
+                    <div class="menu__item-link">
+                        <a href="#contacts">Контакты</a>
+                    </div>
+                    <div class="menu__item-link">
+                        <div class="menu__item-phone">+375 (29) 372-72-52</div>  
+                    </div>
+                </div>
+                <div class="menu__item menu__item-contacts">
+                    <div class="menu__item-phone">+375 (29) 372-72-52</div>
+                    <div class="menu__item-workingHours">Пн.–Пт. 9:00–18:00</div>   
+                </div>
+                <div class="menu__burger-wrap">
+                    <div class="menu__item-burger"></div>
+                </div>
+            </div>
+        
+            <section class="section section__header">
+                <div class="section__content">
+                    <div class="section__title section__title-header">
+                        <h1>Земельные, электромонтажные, сантехнические работы по всей Республике Беларусь</h1>
+                    </div>
+                    <div class="section__buttons">
+                        <div class="section__button section__button-right">
+                            <a href="#form">Рассчитать стоимость</a>
+                        </div>
+                        <div class="section__button section__button-left">
+                            <a href="#services">Услуги</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    
+    <!-- <section class="about" id="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about-us">
+                    <div class="about__title">
+                        <h2>О нас</h2>
+                    </div>
+                    <div class="about__text">ООО "Мониторинговая Компания"</div>
+                </div>
+                <div class="about__img">
+                    <img src="https://via.placeholder.com/400" alt="">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- SERVICES -->
+
+    <section class="section" id="services">
+        <div class="container">
+            <div class="services__content">
+                <div class="section__titles">
+                    <div class="section__title">
+                        <h2>Наши услуги</h2>
+                    </div>
+                    <div class="section__subtitle">
+                        Предоставляем услуги по всей Республике Беларусь
+                    </div>
+                </div>
+                <div class="service__items">
+                    <div class="service__item">
+                        <div class="service__item-img">
+                            <img src="./images/Services/1.jpg" alt="excavation">
+                        </div>
+                        <div class="service__item-title">
+                            Земельные работы
+                        </div>
+                        <div class="service__item-text">
+                            Сметчик выезжает на замеры, расчитывает работу и материалы. В этот же день мы обговариваем сроки выполнения работ.
+                        </div>
+                        <div class="service__button">
+                            <a href="#form">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__item-img">
+                            <img src="./images/Services/2.jpg" alt="electric-photo">
+                        </div>
+                        <div class="service__item-title">
+                            Электромонтажные работы
+                        </div>
+                        <div class="service__item-text">
+                            Сметчик выезжает на замеры, расчитывает работу и материалы. В этот же день мы обговариваем сроки выполнения работ.
+                        </div>
+                        <div class="service__button">
+                            <a href="#form">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__item-img">
+                            <img src="./images/Services/3.jpg" alt="plumbing-photo">
+                        </div>
+                        <div class="service__item-title">
+                            Сантехнические работы
+                        </div>
+                        <div class="service__item-text">
+                            Сметчик выезжает на замеры, расчитывает работу и материалы. В этот же день мы обговариваем сроки выполнения работ.
+                        </div>
+                        <div class="service__button">
+                            <a href="#form">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__item-img">
+                            <img src="./images/Services/4.jpg" alt="excavation">
+                        </div>
+                        <div class="service__item-title">
+                            Аренда строительной техники
+                        </div>
+                        <div class="service__item-text">
+                            Мы предлагаем Вам услуги по аренде мощного и производительного мини-экскаватора JCB 8025 ZTS с высококвалифицированным и ответственным машинистом.
+                        </div>
+                        <div class="service__button">
+                            <a href="#form">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__item-img">
+                            <img src="./images/Services/5.jpg" alt="security-system">
+                        </div>
+                        <div class="service__item-title">
+                            Системы безопасности
+                        </div>
+                        <div class="service__item-text">
+                            Сметчик выезжает на замеры, расчитывает работу и материалы. В этот же день мы обговариваем сроки выполнения работ.
+                        </div>
+                        <div class="service__button">
+                            <a href="#form">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__item-img">
+                            <img src="./images/Services/6.jpg" alt="network-engineering">
+                        </div>
+                        <div class="service__item-title">
+                            Инженерные сети
+                        </div>
+                        <div class="service__item-text">
+                            Сметчик выезжает на замеры, расчитывает работу и материалы. В этот же день мы обговариваем сроки выполнения работ.
+                        </div>
+                        <div class="service__button">
+                            <a href="#form">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR WORKS -->
+
+    <section class="section our__works" id="ourWorks">
+            <div class="works__content">
+                <div class="section__titles">
+                    <div class="section__title">
+                        <h2>Наши работы</h2>
+                    </div>
+                    <div class="section__subtitle">
+                        Примеры выполненных нами работ
+                    </div>
+                </div>
+                <div class="container-works-photo">
+                    <div class="works__photo">
+                        <div class="works__photo-item">
+                            <img src="./images/Works/1.jpg" alt="works-photo">
+                        </div>
+                        <div class="works__photo-item">
+                            <img src="./images/Works/2.jpg" alt="works-photo">
+                        </div>
+                        <div class="works__photo-item">
+                            <img src="./images/Works/3.jpg" alt="works-photo">
+                        </div>
+                        <div class="works__photo-item">
+                            <img src="./images/Works/4.jpg" alt="works-photo">
+                        </div>
+                        <div class="works__photo-item">
+                            <img src="./images/Works/5.jpg" alt="works-photo">
+                        </div>
+                        <div class="works__photo-item">
+                            <img src="./images/Works/6.jpg" alt="works-photo">
+                        </div>
+                        <div class="works__photo-item">
+                            <img src="./images/Works/7.jpg" alt="works-photo">
+                        </div>
+                        <div class="works__photo-item">
+                            <img src="./images/Works/8.jpg" alt="works-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- QUALITY -->
+
+    <section class="quality section">
+        <div class="container">
+            <div class="quality__content">
+                <div class="section__title">
+                    <h2>Почему мы вам понравимся?</h2>
+                </div>
+                <div class="quality__items">
+                    <div class="quality__item">
+                        <div class="quality__num">
+                            <span>1</span>
+                        </div>
+                        <div class="quality__titles">
+                            <div class="quality__title">
+                                Цена известна заранее.
+                            </div>
+                            <div class="quality__subtitle">
+                                Она фиксирована. Мы составляем план и смету в день приезда замерщика.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality__item">
+                        <div class="quality__num">
+                            <span>2</span>
+                        </div>
+                        <div class="quality__titles">
+                            <div class="quality__title">
+                                Качественные материалы.
+                            </div>
+                            <div class="quality__subtitle">
+                                Закупка и доставка на нас. Мы работаем с материалами премиум качества.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality__item">
+                        <div class="quality__num">
+                            <span>3</span>
+                        </div>
+                        <div class="quality__titles">
+                            <div class="quality__title">
+                                Гарантия на работы.
+                            </div>
+                            <div class="quality__subtitle">
+                                На работы мы даем официальную гарантию пять лет.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality__item">
+                        <div class="quality__num">
+                            <span>4</span>
+                        </div>
+                        <div class="quality__titles">
+                            <div class="quality__title">
+                                Специалисты своего дела.
+                            </div>
+                            <div class="quality__subtitle">
+                                Мы за разделение труда. Над каждым проектом работают специалисты узкого профиля.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality__item">
+                        <div class="quality__num">
+                            <span>5</span>
+                        </div>
+                        <div class="quality__titles">
+                            <div class="quality__title">
+                                Цена известна заранее.
+                            </div>
+                            <div class="quality__subtitle">
+                                Она фиксирована. Мы составляем план и смету в день приезда замерщика.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality__item">
+                        <div class="quality__num">
+                            <span>6</span>
+                        </div>
+                        <div class="quality__titles">
+                            <div class="quality__title">
+                                Цена известна заранее.
+                            </div>
+                            <div class="quality__subtitle">
+                                Она фиксирована. Мы составляем план и смету в день приезда замерщика.
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+
+    <section class="section form" id="form">
+        <div class="form__wrap">
+            <div class="section__title-wrap">
+                <div class="section__title">
+                    <h2>Расчет стоимости работ бесплатно</h2>
+                </div>
+                <div class="section__subtitle section__subtitle-form">
+                    С вами свяжется наш менеджер и вы сможете задать ему необходимые вопросы. Мы подготовим коммерческое предложение и отправим его Вам в течении дня
+                </div>
+            </div>
+            <form action="/" class="form__inputs">
+                <input class="form__input" type="text" placeholder="Имя">
+                <input class="form__input" type="text" placeholder="Телефон">
+                <input class="form__input" type="email" placeholder="e-mail">
+                <button type="submit" class="form__input form__button">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- STAGE OF WORK -->
+
+    <section class="section">
+        <div class="container">
+            <div class="section__title">
+                <h2>Из каких этапов состоит наша работа?</h2>
+            </div>
+            <div class="stageWork">
+                <div class="stageWork__items">
+                    <div class="stageWork__item">
+                        <div class="stageWork__item-num stageWork__item-line">
+                            1
+                        </div>
+                        <div class="stageWork__title">
+                            Заявка
+                        </div>
+                        <div class="stageWork__subtitle">
+                            <span>Вы оставляете заявку на расчет стоимости работ по телефону либо на электронную почту</span>
+                        </div>
+                    </div>
+                    <div class="stageWork__item">
+                        <div class="stageWork__item-num stageWork__item-line">
+                            2
+                        </div>
+                        <div class="stageWork__title">Обследование объекта</div>
+                        <div class="stageWork__subtitle">
+                            <span>Выезд специалиста на объект в удобное для Вас время. Предоставление не менее двух предложений реализации вашей задачи
+                            </span>
+                        </div>
+                    </div>
+                    <div class="stageWork__item">
+                        <div class="stageWork__item-num stageWork__item-line">
+                            3
+                        </div>
+                        <div class="stageWork__title">Согласование решений</div>
+                        <div class="stageWork__subtitle">
+                            <span>Выбираем один из вариантов решения задачи и приступаем к реализации проекта</span>
+                        </div>
+                    </div>
+                    <div class="stageWork__item">
+                        <div class="stageWork__item-num">
+                            4
+                        </div>
+                        <div class="stageWork__title">Реализация проекта</div>
+                        <div class="stageWork__subtitle">Выполнение работ в соответствии с выбранным клиентом вариантом решения</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUESTIONS -->
+
+    <section class="section questions">
+        <div class="section__title section__title-questions">
+            <h2>Самые важные вопросы и ответы на них</h2>
+        </div>
+        <div class="questions__items">
+            <div class="questions__item">
+                <div class="questions__text">
+                    Сколько стоит вызов специалиста на объект?
+                </div>
+                <div class="questions__item-btn">+</div>
+                <div class="questions__answer hide">
+                    Выезд специалиста бесплатный.
+                </div>
+            </div>
+            <div class="questions__item">
+                <div class="questions__text">
+                    У вашей компании есть лицензия и реквизиты?
+                </div>
+                <div class="questions__item-btn">+</div>
+                <div class="questions__answer hide">
+                    Выезд специалиста бесплатный.
+                </div>
+            </div>
+            <div class="questions__item">
+                <div class="questions__text">
+                    Может ли заказчик сам предоставить материалы?
+                </div>
+                <div class="questions__item-btn">+</div>
+                <div class="questions__answer hide">
+                    Выезд специалиста бесплатный.
+                </div>
+            </div>
+            <div class="questions__item">
+                <div class="questions__text">
+                    Сколько времени длятся работы?
+                </div>
+                <div class="questions__item-btn">+</div>
+                <div class="questions__answer hide">
+                    Выезд специалиста бесплатный.
+                </div>
+            </div>
+            <div class="questions__subtext">
+                Если у вас остались, вопросы, пожалуйста, напишите нам на <a href="mailto:m.company.bel@gmail.com">m.company.bel@gmail.com</a>  или свяжитесь с нами по телефону
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDER CALCULATE -->
+
+    <!-- <section class="section calculate">
+        <div class="calculate__wrap">
+            <div class="section__title section__title-calculate">
+                <h2>Закажите расчет стоимости работ</h2>
+            </div>
+            <div class="section__subtitle">
+                Мы свяжемся с вами, сделаем замеры, расчеты работ и отправим вам не менее 2-ух варинатов решения вашей задачи
+            </div>
+            <div class="calculate__btn-wrap">
+                <a class="calculate__btn" href="/">Отправить заявку</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CONTACTS -->
+
+    <section class="section contacts" id="contacts">
+        <div class="contacts__wrap">
+            <div class="section__title contacts__phone">
+               <h2>+375 (29) 372-72-52</h2>
+            </div>
+            <div class="section__subtitle contacts__email">
+                <h2>
+                    <a href="mailto:m.company.bel@gmail.com">m.company.bel@gmail.com</a>
+                </h2>
+            </div>
+            <div class="contacts__address">Адрес нашего офиса: г.Волковыск, ул. Пролетарская, 31а</div>
+            <div>
+                <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2392.4471470552267!2d24.45527961572252!3d53.15601587993957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46df9dcb26ac035d%3A0x2d4c746314a7b0e6!2z0JzQuNC90LgtINGN0LrRgdC60LDQstCw0YLQvtGAINCw0YDQtdC90LTQsCDQntCe0J4gItCc0L7QvdC40YLQvtGA0LjQvdCz0L7QstCw0Y8g0LrQvtC80L_QsNC90LjRjyI!5e0!3m2!1sru!2sby!4v1606474344511!5m2!1sru!2sby" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer__nav">
+            <div class="footer__nav__item">
+                <div class="copyright">
+                    © 2020 Мониторинговая Компания
+                </div>
+            </div>
+            <div class="footer__nav__item footer__nav__item-menu">
+                <div class="footer__menu">
+                    <a href="#header">Главная</a>
+                </div>
+                <div class="footer__menu">
+                    <a href="#services">Услуги</a>
+                </div>
+                <div class="footer__menu">
+                    <a href="#ourWorks">Наши работы</a>
+                </div>
+                <div class="footer__menu">
+                    <a href="#contacts">Контакты</a>
+                </div>
+            </div>
+            <div class="footer__nav__item up">
+                <a href="#header">
+                    <img class="footer__nav__btn-up" src="./images/up-arrow.svg" alt="arrow-up">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+<script src="main.js"></script>
+</body>
+</html>
