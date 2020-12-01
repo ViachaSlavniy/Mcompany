@@ -55,7 +55,7 @@ h2 {
 
 .header {
     height: 100vh;
-    background: rgba(0, 0, 0, 0.3) url(./images/header.jpg) no-repeat center / cover;
+    background: rgba(0, 0, 0, 0.3) url(./images/header1.jpeg) no-repeat center / cover;
     background-blend-mode: overlay;
     font-size: 1.8rem;
 }
@@ -288,7 +288,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 8rem 0;
+    margin: 5rem 0;
 }
 .quality__item {
     margin: 2rem 0;
@@ -513,7 +513,7 @@ h2 {
 
 /* CONTACTS */
 .contacts {
-    background-color: #fff;
+    background-color: #f0f0f0;
 }
 .contacts__wrap {
     text-align: center;
