@@ -232,10 +232,13 @@ h2 {
 .service__item-text {
     /* display: flex;
     align-items: center; */
-    height: 80px;
-    margin-bottom: 1.5rem;
+    padding-bottom: 3rem;
+    height: 100px;
     font-size: 1.4rem;
     line-height: 2.2rem;
+}
+.service__item-text-last-row {
+    height: auto;
 }
 .service__item-text a {
     color: #ff6153;
@@ -257,6 +260,12 @@ h2 {
     border-radius: .5rem;
     background-color: #FF6153;
     border: 1px solid #FF6153;
+    
+    transition: all .2s ease-in;
+}
+.service__button a:hover {
+    color: #FF6153;
+    background-color: #fff;
 }
 
 /* OUR WORKS */
@@ -364,6 +373,12 @@ h2 {
     font-weight: 500;
     color: #fff;
     cursor: pointer;
+
+    transition: all .2s ease-in;
+}
+.form__button:hover {
+    color:#FF6153;
+    background-color: #fff;
 }
 .form__wrap {
     margin: 0 auto;
@@ -538,7 +553,7 @@ h2 {
 }
 .contacts__map {
     position:relative;
-    width: 85%;
+    width: 100%;
     height: 500px;
     border: none;
     overflow:hidden;
@@ -750,10 +765,12 @@ h2 {
         height: auto;
     }
     .service__item-text {
-        margin-bottom: 2rem;
         align-items: flex-start;
         height: 80px;
         width: 400px;
+    }
+    .service__item-text-last-row {
+        height: auto;
     }
     .works__photo-item {
         flex-basis: 31%;
@@ -774,7 +791,7 @@ h2 {
     }
     .form__input {
         margin: 1rem;
-        flex-basis: 50%;
+        flex-basis: 70%;
     }
     .form__button {
         flex-basis: 50%;
@@ -976,7 +993,7 @@ h2 {
     .service__item-text {
         text-align: start;
         width: 100%;
-        height: 90px;
+        height: auto;
     }
     .quality__items {
         margin: 0;
